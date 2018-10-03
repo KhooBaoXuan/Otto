@@ -7,5 +7,10 @@
     <color name="endBlue">#1ebbd7</color>
     <color name="white">#fff</color>
 
+    <color name="greenPrimaryDark">#7ecb20</color>
+    <color name="greenPrimary">#b2ff59</color>
+    <color name="greenLight">#e7ff8c</color>
+
+
 
 </resources>

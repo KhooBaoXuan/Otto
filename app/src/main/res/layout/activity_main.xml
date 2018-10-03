@@ -11,22 +11,22 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="651dp"
+        android:layout_height="600dp"
         android:layout_marginBottom="45dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="52dp"
         android:elevation="10dp"
         app:cardBackgroundColor="#fff"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.181">
-
+        app:layout_constraintVertical_bias="0.962">
 
 
         <RelativeLayout
@@ -37,8 +37,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="230dp"
-                android:cropToPadding="true"
                 android:adjustViewBounds="true"
+                android:cropToPadding="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/blue_sea_darken" />
 
@@ -52,10 +52,9 @@
                 <ImageView
                     android:layout_width="95dp"
                     android:layout_height="95dp"
-                    android:background="@drawable/round_circle_background"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    />
+                    android:background="@drawable/round_circle_background" />
 
                 <ImageView
                     android:layout_width="95dp"
@@ -72,11 +71,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             android:text="@string/HelloLabel"
             android:textColor="#333333"
-            android:textStyle="bold"
-            android:fontFamily=""
-            android:textSize="35dp" />
+            android:textSize="35dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="285dp"
@@ -85,58 +84,61 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="82dp"
             android:text="@string/IntroLabel"
             android:textAlignment="center"
-            android:textSize="16dp"
             android:textColor="#999999"
-            android:textStyle="italic"/>
+            android:textSize="16dp"
+            android:textStyle="italic" />
 
         <LinearLayout
             android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_marginTop="165dp"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:orientation="horizontal"
-                android:paddingLeft="35dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="35dp">
 
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:src="@mipmap/ic_email_icon"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_email_icon" />
+
                 <TextView
-                    android:textStyle="bold"
-                    android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="baoxuan9616@gmail.com"/>
+                    android:text="@string/email_address"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:orientation="horizontal"
-                android:paddingLeft="35dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:src="@mipmap/ic_phone_icon"/>
-                <TextView
-                    android:textStyle="bold"
+                android:paddingLeft="35dp">
 
-                    android:layout_gravity="center_vertical"
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_phone_icon" />
+
+                <TextView
                     android:layout_width="wrap_content"
+
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="+60 169157190"/>
+                    android:text="@string/phone_num"
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>
@@ -147,12 +149,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center|bottom"
             android:layout_margin="30dp"
+            android:background="@drawable/add_to_contact_button"
             android:fontFamily="sans-serif-condensed"
-            android:textStyle="bold"
+            android:text="Add To Contact"
             android:textColor="@color/white"
             android:textSize="16dp"
-            android:background="@drawable/add_to_contact_button"
-            android:text="Add To Contact" />
+            android:textStyle="bold" />
 
 
     </android.support.v7.widget.CardView>
